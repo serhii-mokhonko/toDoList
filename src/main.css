@@ -4,8 +4,6 @@
 }
 
 body {
-    margin     : 0;
-    background : linear-gradient(to right, #54a0ff, #2e86de);
     font-family: 'Montserrat', sans-serif;
     color:#222f3e;
 }
@@ -102,7 +100,17 @@ body {
     padding: 10px 25px;
     background: #0abde3;
     border: 1px solid #000;
-    color: #c8d6e5;
+    color: #fff;
+    outline: none; 
+    box-shadow: 1px 1px 3px 0px #000;
+}
+
+.btn:hover{
+    opacity: 0.9;
+}
+
+.btn:active{
+    box-shadow: 0px 0px 3px 0px #000;
 }
 
 .btn--done{
@@ -122,17 +130,16 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+    align-items: flex-start;
 }
 
 .todo-card{
     width: 230px;
     border: 1px solid #000;
-    border-radius: 5px;
     margin-bottom: 15px;
 }
 
 .todo-card__title {
-    border-radius: 5px 5px 0 0;
     border-bottom: 1px solid #000;
     background: #16a085;
     text-align: center;
