@@ -12,13 +12,11 @@ body {
 
 .card {
     width        : 350px;
-    /* height       : 250px; */
     padding      : 15px;
     margin       : 10px auto;
-    border-radius: 5px;
+    border-radius: 1px;
 
-    background: #c8d6e5;
-    box-shadow: 0 0 17px 6px #576574;
+    box-shadow: 0 0 10px 6px #576574;
 
     position: relative;
 }
@@ -40,11 +38,12 @@ body {
     
     cursor: pointer;
 
-    transition: background 0.2s linear;
+    transition: all 0.2s linear;
 }
 
 .card .close-window:hover {
-    background: #ee5253;
+    background: #000;
+    color: #fff;
 }
 
 
@@ -98,9 +97,9 @@ body {
 .btn {
     font-size: 16px;
     padding: 10px 25px;
-    background: #0abde3;
     border: 1px solid #000;
-    color: #fff;
+    background: none;
+    color: #000000;
     outline: none; 
     box-shadow: 1px 1px 3px 0px #000;
 }
@@ -114,11 +113,13 @@ body {
 }
 
 .btn--done{
-    background: #1abc9c;
+    background: #fff;
+    color: #000
 }
 
 .btn--del{
-    background: #e74c3c;
+    background: #000;
+    color: #fff;
 }
 
 /* TODO List */
@@ -141,9 +142,10 @@ body {
 
 .todo-card__title {
     border-bottom: 1px solid #000;
-    background: #16a085;
+    background: #000;
     text-align: center;
     margin-bottom: 10px;
+    color: #fff;
 }
 
 .todo-card__content {
